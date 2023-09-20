@@ -71,3 +71,11 @@ const obj2 = {
 const person = {...obj1, ...obj2}
 console.log(person);
 //result -> {firstName: 'Andrew', lastName: 'Alekseev', age: '28', gender: 'female'}
+
+
+//example callback using map
+function multiplyByTwo(num) {
+  return num * 2
+}
+
+[1, 2, 3].map(multiplyByTwo);
