@@ -9,8 +9,14 @@ const fs = require('fs');
 // console.log(os.type());
 // console.log(os.arch());
 
-//запишем дані в файл
+//Створим файл і запишем дані в нього (my_file.txt в папці NodeJs)
 fs.writeFile('my_file.txt',"Hello there", function(err) {
   if(err)console.log(err.message);
   console.log('Saved!');
 })
+//..методом append можна дописати дані в файл, бо writeFile перепишу, read,який зчитує дані з файла тощо
+//можна видаляти ще, перейменовувати тощо
+
+
+
+
